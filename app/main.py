@@ -4,6 +4,6 @@ from asktanya.main import ask_tanya
 
 app= FastAPI()
 
-@app.get('/')
+@app.get('/ask')
 def ask(question):
     return{'question':question, 'answer': ask_tanya(question)}
