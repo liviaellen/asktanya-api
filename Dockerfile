@@ -8,7 +8,7 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 RUN [ "python", "-c", "import nltk; nltk.download('punkt', download_dir='/usr/local/nltk_data')" ]
-RUN [ "python", "-c", "import nltk; nltk.download('omw', download_dir='/usr/local/nltk_data')" ]
+RUN [ "python", "-c", "import nltk; nltk.download('omw-1.4', download_dir='/usr/local/nltk_data')" ]
 RUN [ "python", "-c", "import nltk; nltk.download('wordnet', download_dir='/usr/local/nltk_data')" ]
 RUN [ "python", "-c", "import nltk; nltk.download('stopwords', download_dir='/usr/local/nltk_data')" ]
 
